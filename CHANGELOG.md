@@ -21,6 +21,9 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - Fix `MenuItem` broken styles @miroslavstastny ([#94](https://github.com/stardust-ui/react/pull/94))
 
+### Features
+-Add Radio component @alinais ([#100](https://github.com/stardust-ui/react/pull/100))
+
 <!--------------------------------[ v0.2.7 ]------------------------------- -->
 ## [v0.2.7](https://github.com/stardust-ui/react/tree/v0.2.7) (2018-08-13)
 [Compare changes](https://github.com/stardust-ui/react/compare/v0.2.6...v0.2.7)
