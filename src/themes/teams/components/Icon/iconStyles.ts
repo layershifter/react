@@ -1,6 +1,6 @@
 import fontAwesomeIcons from './fontAwesomeIconStyles'
 import { disabledStyle, fittedStyle } from '../../../../styles/customCSS'
-import { IComponentPartStylesInput, ICSSInJSStyle } from '../../../../../types/theme'
+import { ICSSInJSStyle } from '../../../../../types/theme'
 import { IconXSpacing } from '../../../../components/Icon/Icon'
 
 const sizes = new Map([
@@ -88,7 +88,7 @@ const getPaddedStyle = (isFontBased): ICSSInJSStyle => ({
 
 const iconStyles = {
   root: ({
-    props: { disabled, font, svg, name, size, bordered, circular, xSpacing },
+    props: { disabled, font, svg, name, size, bordered, circular, color, xSpacing },
     variables: v,
   }): ICSSInJSStyle => {
     const isFontBased = !svg
@@ -102,7 +102,7 @@ const iconStyles = {
 
       ...(isFontBased ? getFontStyles(font, name, size) : {}),
 
-      ...(isFontBased && { color: v.color }),
+      ...(isFontBased && { color: color || 'inherit' }),
       backgroundColor: v.backgroundColor,
 
       opacity: 1,
@@ -116,7 +116,7 @@ const iconStyles = {
       ...getXSpacingStyles(xSpacing, v.horizontalSpace),
 
       ...((bordered || v.borderColor || circular) &&
-        getBorderedStyles(isFontBased, circular, v.borderColor, v.color)),
+        getBorderedStyles(isFontBased, circular, v.borderColor, color || 'black')),
 
       ...(v.backgroundColor && {
         ...getPaddedStyle(isFontBased),
@@ -127,8 +127,8 @@ const iconStyles = {
     }
   },
 
-  svg: ({ variables: v }): ICSSInJSStyle => ({
-    fill: v.color,
+  svg: ({ props: { color } }): ICSSInJSStyle => ({
+    fill: color || 'inherit',
   }),
 }
 

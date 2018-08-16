@@ -1,7 +1,7 @@
 import * as PropTypes from 'prop-types'
 import * as React from 'react'
 
-import { childrenExist, customPropTypes, UIComponent } from '../../lib'
+import { childrenExist, createShorthandFactory, customPropTypes, UIComponent } from '../../lib'
 
 /**
  * A component containing text

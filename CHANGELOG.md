@@ -17,6 +17,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+- Fix Button icon color inheritance @levithomason ([#102](https://github.com/stardust-ui/react/pull/102))
+
 <!--------------------------------[ v0.2.7 ]------------------------------- -->
 ## [v0.2.7](https://github.com/stardust-ui/react/tree/v0.2.7) (2018-08-13)
 [Compare changes](https://github.com/stardust-ui/react/compare/v0.2.6...v0.2.7)

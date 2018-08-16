@@ -3,7 +3,6 @@ import { pxToRem } from '../../../../lib'
 export interface IconVariables {
   [key: string]: string | number
 
-  color: string
   backgroundColor: string
   borderColor: string
   horizontalSpace: string
@@ -11,7 +10,6 @@ export interface IconVariables {
 }
 
 export default (): IconVariables => ({
-  color: 'black',
   // TODO move initial variable discovery to JSON files
   // similar to how components have an info.json file
   backgroundColor: undefined,
