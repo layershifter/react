@@ -55,7 +55,7 @@ jobs:
       # it is not in package.json as it would require Python on Windows
       - run:
           name: Install weak
-          command: yarn add --dev weak
+          command: yarn add --dev --ignore-workspace-root-check weak
       - run:
           name: Unit Tests
           command: yarn test --strict --maxWorkers=4 --detectLeaks

@@ -117,7 +117,7 @@ task('build:stats:bundle', async () => {
 task(
   'stats',
   series(
-    parallel(series('clean:dist:es', 'build:dist:es'), 'build:docs:component-info'),
+    parallel(series('bundle:clean:es', 'bundle:build:es'), 'build:docs:component-info'),
     'build:stats:bundle',
   ),
 )

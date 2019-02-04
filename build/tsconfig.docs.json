@@ -3,9 +3,9 @@
   "compilerOptions": {
     "module": "esnext",
     "paths": {
-      "@stardust-ui/react": ["packages/react/src"],
+      "@stardust-ui/*": ["packages/*/src"],
       "*": ["*", "types/*", "packages/react/*"]
     }
   },
-  "include": ["../docs/src", "../packages/src", "../packages/types", "../types"]
+  "include": ["../docs/src", "../packages/*/src", "../types"]
 }

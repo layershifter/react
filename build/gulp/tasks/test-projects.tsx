@@ -1,5 +1,6 @@
 import * as fs from 'fs'
 import { parallel, series, task } from 'gulp'
+import { rollup as lernaAliases } from 'lerna-alias'
 import * as path from 'path'
 import sh from '../sh'
 import * as rimraf from 'rimraf'
@@ -16,11 +17,21 @@ const log = (context: string) => (message: string) => {
   console.log('='.repeat(80))
 }
 
-export const publishPackage = async () => {
-  const filename = tmp.tmpNameSync({ prefix: 'stardust-', postfix: '.tgz' })
-  await sh(`yarn pack --filename ${filename}`)
+const publishPackages = async (): Promise<string[]> => {
+  const packages = lernaAliases({ sourceDirectory: false })
 
-  return filename
+  return Promise.all(
+    Object.keys(packages).map(
+      async (packageName: string): Promise<string> => {
+        const filename = tmp.tmpNameSync({ prefix: `stardust-`, postfix: '.tgz' })
+        const directory = packages[packageName]
+
+        await runIn(directory)(`yarn pack --filename ${filename}`)
+
+        return filename
+      },
+    ),
+  )
 }
 
 export const runIn = path => cmd => sh(`cd ${path} && ${cmd}`)
@@ -61,8 +72,8 @@ task('test:projects:cra-ts', async () => {
   const logger = log('test:projects:cra-ts')
   const scaffoldPath = paths.base.bind(null, 'build/gulp/tasks/test-projects/cra')
 
-  const packageFilename = await publishPackage()
-  logger(`✔️Package was published: ${packageFilename}`)
+  const packageFilenames = await publishPackages()
+  logger(`✔️Packages were published`)
 
   //////// CREATE TEST REACT APP ///////
   logger('STEP 1. Create test React project with TSX scripts..')
@@ -77,8 +88,8 @@ task('test:projects:cra-ts', async () => {
   //////// ADD STARDUST AS A DEPENDENCY ///////
   logger('STEP 2. Add Stardust dependency to test project..')
 
-  await runInTestApp(`yarn add ${packageFilename}`)
-  logger("Stardust is successfully added as test project's dependency.")
+  await runInTestApp(`yarn add ${packageFilenames}`)
+  logger(`✔️Stardust UI packages were added to dependencies`)
 
   //////// REFERENCE STARDUST COMPONENTS IN TEST APP's MAIN FILE ///////
   logger("STEP 3. Reference Stardust components in test project's App.tsx")
@@ -99,8 +110,8 @@ task('test:projects:rollup', async () => {
 
   logger(`✔️Temporary directory was created: ${tmpDirectory}`)
 
-  const packageFilename = await publishPackage()
-  logger(`✔️Package was published: ${packageFilename}`)
+  const packageFilenames = await publishPackages()
+  logger(`✔️Package were published`)
 
   const dependencies = [
     'rollup',
@@ -113,8 +124,8 @@ task('test:projects:rollup', async () => {
   await runIn(tmpDirectory)(`yarn add ${dependencies}`)
   logger(`✔️Dependencies were installed`)
 
-  await runIn(tmpDirectory)(`yarn add ${packageFilename}`)
-  logger(`✔️Stardust UI was added to dependencies`)
+  await runIn(tmpDirectory)(`yarn add ${packageFilenames.join(' ')}`)
+  logger(`✔️Stardust UI packages were added to dependencies`)
 
   fs.copyFileSync(scaffoldPath('app.js'), path.resolve(tmpDirectory, 'app.js'))
   fs.copyFileSync(scaffoldPath('rollup.config.js'), path.resolve(tmpDirectory, 'rollup.config.js'))
@@ -126,5 +137,5 @@ task('test:projects:rollup', async () => {
 
 task(
   'test:projects',
-  series('dll', 'build:dist', parallel('test:projects:cra-ts', 'test:projects:rollup')),
+  series('dll', 'bundle:all', parallel('test:projects:cra-ts', 'test:projects:rollup')),
 )

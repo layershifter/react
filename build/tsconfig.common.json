@@ -6,6 +6,7 @@
     "baseUrl": "../",
     "paths": {
       "@stardust-ui/react": ["packages/react/src"],
+      "@stardust-ui/react-proptypes": ["packages/react-proptypes/src"],
       "*": ["*", "types/*"]
     },
     "types": ["node", "jest"],
