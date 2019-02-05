@@ -1,5 +1,5 @@
 import * as PropTypes from 'prop-types'
-import * as customPropTypes from '@stardust-ui/react-proptypes'
+import * as customPropTypes from 'stardust-ui-test-react-proptypes'
 
 export interface CreateCommonConfig {
   animated?: boolean

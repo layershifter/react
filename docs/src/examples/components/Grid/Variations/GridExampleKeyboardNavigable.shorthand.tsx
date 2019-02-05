@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Grid, Image, Button, gridBehavior } from '@stardust-ui/react'
+import { Grid, Image, Button, gridBehavior } from 'stardust-ui-test-react'
 import * as _ from 'lodash'
 
 const imageNames = [

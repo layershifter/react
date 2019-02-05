@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Avatar, Chat, Divider } from '@stardust-ui/react'
+import { Avatar, Chat, Divider } from 'stardust-ui-test-react'
 
 const janeAvatar = {
   image: 'public/images/avatar/small/ade.jpg',

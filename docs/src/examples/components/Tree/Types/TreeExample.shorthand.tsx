@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Tree } from '@stardust-ui/react'
+import { Tree } from 'stardust-ui-test-react'
 
 const items = [
   {

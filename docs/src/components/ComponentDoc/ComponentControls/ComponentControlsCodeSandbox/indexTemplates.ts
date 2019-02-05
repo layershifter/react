@@ -1,4 +1,4 @@
-export const appTemplateJs = `import { Provider, themes } from "@stardust-ui/react"
+export const appTemplateJs = `import { Provider, themes } from "stardust-ui-test-react"
 import React from "react";
 import ReactDOM from "react-dom";
 

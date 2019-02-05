@@ -6,7 +6,7 @@ import {
   toolbarBehavior,
   Menu,
   MenuItemProps,
-} from '@stardust-ui/react'
+} from 'stardust-ui-test-react'
 import style from './chatProtoStyle'
 
 type ToolbarProps = MenuItemProps & { key: string; 'aria-label'?: string }

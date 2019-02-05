@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { List, Image } from '@stardust-ui/react'
+import { List, Image } from 'stardust-ui-test-react'
 
 const ListExample = ({ knobs }) => (
   <div style={{ width: knobs.width }}>

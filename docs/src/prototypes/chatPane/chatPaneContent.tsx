@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Scrollbars from 'react-custom-scrollbars'
-import { Chat, Divider, Avatar } from '@stardust-ui/react'
+import { Chat, Divider, Avatar } from 'stardust-ui-test-react'
 import { ChatData, ChatItemTypes, generateChatProps } from './services'
 import style from './chatProtoStyle'
 

@@ -1,4 +1,4 @@
-import * as customPropTypes from '@stardust-ui/react-proptypes'
+import * as customPropTypes from 'stardust-ui-test-react-proptypes'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import * as keyboardKey from 'keyboard-key'

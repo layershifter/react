@@ -5,8 +5,8 @@
     "lib": ["es2015", "dom"],
     "baseUrl": "../",
     "paths": {
-      "@stardust-ui/react": ["packages/react/src"],
-      "@stardust-ui/react-proptypes": ["packages/react-proptypes/src"],
+      "stardust-ui-test-react": ["packages/react/src"],
+      "stardust-ui-test-react-proptypes": ["packages/react-proptypes/src"],
       "*": ["*", "types/*"]
     },
     "types": ["node", "jest"],

@@ -1,4 +1,4 @@
-import { Button, Dialog, Divider, Grid, Label, Segment } from '@stardust-ui/react'
+import { Button, Dialog, Divider, Grid, Label, Segment } from 'stardust-ui-test-react'
 import * as React from 'react'
 
 type DialogExampleCallbacksState = {

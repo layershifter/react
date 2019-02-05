@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Provider, Grid, Divider, Header, Icon } from '@stardust-ui/react'
+import { Provider, Grid, Divider, Header, Icon } from 'stardust-ui-test-react'
 import themeWithProcessedIcons from 'src/themes/teams/withProcessedIcons'
 import { TeamsProcessedSvgIconSpec } from 'src/themes/teams/components/Icon/svg/types'
 

@@ -1,4 +1,4 @@
-import { Button } from '@stardust-ui/react'
+import { Button } from 'stardust-ui-test-react'
 import * as React from 'react'
 
 const ButtonExampleRtl = () => (

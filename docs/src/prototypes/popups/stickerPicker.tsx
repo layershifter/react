@@ -6,7 +6,7 @@ import {
   dialogBehavior,
   tabBehavior,
   tabListBehavior,
-} from '@stardust-ui/react'
+} from 'stardust-ui-test-react'
 import * as _ from 'lodash'
 import { arrayOfStickerImagesNames, getItemsData } from './dataMocks'
 import GridImagePicker from './GridImagePicker/GridImagePicker'

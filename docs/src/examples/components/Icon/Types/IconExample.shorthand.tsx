@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Icon } from '@stardust-ui/react'
+import { Icon } from 'stardust-ui-test-react'
 
 const IconExample = () => (
   <div>

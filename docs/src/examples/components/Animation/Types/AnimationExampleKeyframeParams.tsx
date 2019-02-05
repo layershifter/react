@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Animation, Icon, Provider, ThemeAnimation } from '@stardust-ui/react'
+import { Animation, Icon, Provider, ThemeAnimation } from 'stardust-ui-test-react'
 
 const colorChanger: ThemeAnimation<{ fromColor: string; toColor: string }> = {
   keyframe: ({ fromColor, toColor }) => ({

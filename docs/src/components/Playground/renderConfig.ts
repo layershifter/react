@@ -1,6 +1,6 @@
 import * as _ from 'lodash'
 import * as React from 'react'
-import * as Stardust from '@stardust-ui/react'
+import * as Stardust from 'stardust-ui-test-react'
 import * as ReactDOM from 'react-dom'
 
 export const babelConfig = {
@@ -18,7 +18,7 @@ export const babelConfig = {
 }
 
 export const imports = {
-  '@stardust-ui/react': Stardust,
+  'stardust-ui-test-react': Stardust,
   lodash: _,
   react: React,
   'react-dom': ReactDOM,

@@ -1,4 +1,4 @@
-import { Attachment } from '@stardust-ui/react'
+import { Attachment } from 'stardust-ui-test-react'
 import * as React from 'react'
 
 const AttachmentPerf = () => <Attachment header="Document.docx" />

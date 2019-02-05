@@ -4,7 +4,7 @@ import * as React from 'react'
 import DocumentTitle from 'react-document-title'
 import { withRouter } from 'react-router'
 import { Grid, Icon } from 'semantic-ui-react'
-import { Header } from '@stardust-ui/react'
+import { Header } from 'stardust-ui-test-react'
 
 import componentInfoShape from 'docs/src/utils/componentInfoShape'
 import { scrollToAnchor, examplePathToHash, getFormattedHash } from 'docs/src/utils'

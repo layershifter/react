@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Avatar, Button, Divider, Icon, Layout, Segment, Text } from '@stardust-ui/react'
+import { Avatar, Button, Divider, Icon, Layout, Segment, Text } from 'stardust-ui-test-react'
 import style from './chatProtoStyle'
 
 import { ChatData } from './services'

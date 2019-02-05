@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Button, Input, Header, Popup, popupFocusTrapBehavior } from '@stardust-ui/react'
+import { Button, Input, Header, Popup, popupFocusTrapBehavior } from 'stardust-ui-test-react'
 
 const PopupFocusTrapExample = () => (
   <>

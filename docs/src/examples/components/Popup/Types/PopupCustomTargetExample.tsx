@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Popup, Button, Divider, Text, Grid } from '@stardust-ui/react'
+import { Popup, Button, Divider, Text, Grid } from 'stardust-ui-test-react'
 import { findDOMNode } from 'react-dom'
 
 class PopupExample extends React.Component {

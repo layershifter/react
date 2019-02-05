@@ -2,7 +2,7 @@ import * as React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Header, Icon, Divider } from 'semantic-ui-react'
 
-import { Button } from '@stardust-ui/react'
+import { Button } from 'stardust-ui-test-react'
 
 import CodeSnippet from '../components/CodeSnippet'
 import DocPage from '../components/DocPage'
@@ -13,7 +13,7 @@ export default () => (
     <p>
       Stardust UI should be installed as a <code>dependency</code> of your app.
     </p>
-    <CodeSnippet mode="sh" value="yarn add @stardust-ui/react" />
+    <CodeSnippet mode="sh" value="yarn add stardust-ui-test-react" />
     <Header as="h2">Setup</Header>
     <p>
       Stardust components are styled using CSS in JS. This technique requires a style renderer to
@@ -31,7 +31,7 @@ export default () => (
       value={`
         import React from 'react'
         import ReactDOM from 'react-dom'
-        import { Provider, themes } from '@stardust-ui/react'
+        import { Provider, themes } from 'stardust-ui-test-react'
 
         import App from './App'
 
@@ -49,7 +49,7 @@ export default () => (
       label="App.jsx"
       value={`
         import React from 'react'
-        import { Button } from '@stardust-ui/react'
+        import { Button } from 'stardust-ui-test-react'
 
         export default () => <Button content="Theming" icon="arrow right" iconPosition="after" primary />
       `}

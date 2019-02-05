@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Accordion, Button } from '@stardust-ui/react'
+import { Accordion, Button } from 'stardust-ui-test-react'
 
 class AccordionPanelCustomContentExample extends React.Component {
   render() {

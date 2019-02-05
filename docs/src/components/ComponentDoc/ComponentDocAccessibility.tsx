@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as _ from 'lodash'
-import { Header } from '@stardust-ui/react'
+import { Header } from 'stardust-ui-test-react'
 
 const behaviorMenu = require('docs/src/behaviorMenu')
 

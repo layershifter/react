@@ -19,7 +19,7 @@ export default (): Error => {
       'To prevent wrong git tags from being pushed, please, consider to do the following steps:',
       ' - delete all local tags: git tag -l | xargs git tag -d',
       ' - pull all remote tags: git fetch --tags',
-      ' - verify your tags ($ git tag -l) match NPM releases: https://www.npmjs.com/package/@stardust-ui/react?activeTab=versions',
+      ' - verify your tags ($ git tag -l) match NPM releases: https://www.npmjs.com/package/stardust-ui-test-react?activeTab=versions',
       '-----------------------------------------------',
     ].join('\n')
 

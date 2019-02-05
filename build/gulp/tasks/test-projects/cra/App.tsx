@@ -1,4 +1,4 @@
-import { Avatar, Button, Header, Image, Input, Popup, Provider, themes } from '@stardust-ui/react'
+import { Avatar, Button, Header, Image, Input, Popup, Provider, themes } from 'stardust-ui-test-react'
 import * as React from 'react'
 
 class App extends React.Component {

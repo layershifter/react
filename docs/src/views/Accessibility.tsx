@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import DocPage from '../components/DocPage/DocPage'
 import CodeSnippet from '../components/CodeSnippet'
 
-import { Button } from '@stardust-ui/react'
+import { Button } from 'stardust-ui-test-react'
 
 const code = (content: string): React.ReactNode => <code>{content}</code>
 
@@ -394,7 +394,7 @@ export default () => (
       <CodeSnippet
         value={`
           import React from 'react'
-          import { Menu } from '@stardust-ui/react'
+          import { Menu } from 'stardust-ui-test-react'
 
           const items = [
             { key: 'editorials', content: 'Editorials' },

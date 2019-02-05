@@ -1,4 +1,4 @@
-import { Button, Dialog } from '@stardust-ui/react'
+import { Button, Dialog } from 'stardust-ui-test-react'
 import * as React from 'react'
 
 const DialogExampleContent: React.FC = () => (

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Divider } from '@stardust-ui/react'
+import { Divider } from 'stardust-ui-test-react'
 
 const DividerExampleContent = () => <Divider content="Some text" />
 

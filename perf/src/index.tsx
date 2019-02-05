@@ -1,4 +1,4 @@
-import { Provider, themes } from '@stardust-ui/react'
+import { Provider, themes } from 'stardust-ui-test-react'
 import * as _ from 'lodash'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'

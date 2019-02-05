@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Button, Divider, Header, Label, Portal } from '@stardust-ui/react'
+import { Button, Divider, Header, Label, Portal } from 'stardust-ui-test-react'
 
 class PortalExampleControlled extends React.Component {
   state = { log: [], logCount: 0, open: false }

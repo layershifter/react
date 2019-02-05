@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Header } from 'semantic-ui-react'
-import { Button, Divider, Icon, Label, Provider } from '@stardust-ui/react'
+import { Button, Divider, Icon, Label, Provider } from 'stardust-ui-test-react'
 
 import DocPage from '../components/DocPage/DocPage'
 import ExampleSnippet from '../components/ExampleSnippet/ExampleSnippet'
@@ -44,7 +44,7 @@ export default () => (
     <ExampleSnippet
       value={`
         import React from 'react'
-        import { Button, Icon, Label, Provider } from '@stardust-ui/react'
+        import { Button, Icon, Label, Provider } from 'stardust-ui-test-react'
 
         export default () =>
          <Provider>
@@ -80,7 +80,7 @@ export default () => (
     <ExampleSnippet
       value={`
         import React from 'react'
-        import { Button } from '@stardust-ui/react'
+        import { Button } from 'stardust-ui-test-react'
 
         const styles = {
           color: "coral",
@@ -120,7 +120,7 @@ export default () => (
     <ExampleSnippet
       value={`
         import React from 'react'
-        import { Button } from '@stardust-ui/react'
+        import { Button } from 'stardust-ui-test-react'
 
         const btnExample = () => (
           <Button
@@ -181,7 +181,7 @@ export default () => (
     <ExampleSnippet
       value={`
         import React from 'react'
-        import { Button, Icon, Label, Provider } from '@stardust-ui/react'
+        import { Button, Icon, Label, Provider } from 'stardust-ui-test-react'
 
         const theme = {
           siteVariables: {

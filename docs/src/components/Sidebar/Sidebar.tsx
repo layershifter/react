@@ -9,7 +9,7 @@ import { Icon, Input as SemanticUIInput, Menu } from 'semantic-ui-react'
 
 import Logo from 'docs/src/components/Logo/Logo'
 import { getComponentPathname } from 'docs/src/utils'
-import { themes } from '@stardust-ui/react'
+import { themes } from 'stardust-ui-test-react'
 import { ThemeContext } from '../../context/ThemeContext'
 import { constants } from 'src/lib'
 

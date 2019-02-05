@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Button, Provider } from '@stardust-ui/react'
+import { Button, Provider } from 'stardust-ui-test-react'
 
 const ButtonUsageExampleShorthand = () => (
   <div>

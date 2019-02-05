@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Avatar } from '@stardust-ui/react'
+import { Avatar } from 'stardust-ui-test-react'
 
 const AvatarExampleShorthand = () => (
   <div>

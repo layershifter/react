@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Provider, Text } from '@stardust-ui/react'
+import { Provider, Text } from 'stardust-ui-test-react'
 
 export default props => {
   const { content, children } = props

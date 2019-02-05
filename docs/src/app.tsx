@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Provider, themes } from '@stardust-ui/react'
+import { Provider, themes } from 'stardust-ui-test-react'
 
 import { mergeThemes } from 'src/lib'
 import { ThemeContext } from './context/ThemeContext'

@@ -1,4 +1,4 @@
-import { ComponentSlotStylesInput, createComponent, Icon, ICSSInJSStyle } from '@stardust-ui/react'
+import { ComponentSlotStylesInput, createComponent, Icon, ICSSInJSStyle } from 'stardust-ui-test-react'
 import * as Color from 'color'
 import * as _ from 'lodash'
 import * as React from 'react'

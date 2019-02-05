@@ -1,6 +1,6 @@
 import * as React from 'react'
 import EmployeeCard from './EmployeeCard'
-import { Divider, Header } from '@stardust-ui/react'
+import { Divider, Header } from 'stardust-ui-test-react'
 import AvatarEmployeeCard from './AvatarEmployeeCard'
 
 class EmployeeCardPrototype extends React.Component<any, { popupOpen: boolean }> {

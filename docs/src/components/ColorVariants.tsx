@@ -1,6 +1,6 @@
 import * as _ from 'lodash'
 import * as React from 'react'
-import { createComponent, ComponentSlotStylesInput, ProviderConsumer } from '@stardust-ui/react'
+import { createComponent, ComponentSlotStylesInput, ProviderConsumer } from 'stardust-ui-test-react'
 
 import ColorBox from './ColorBox'
 

@@ -1,4 +1,4 @@
-import { Divider, Dropdown, DropdownProps, Header, Loader, Segment } from '@stardust-ui/react'
+import { Divider, Dropdown, DropdownProps, Header, Loader, Segment } from 'stardust-ui-test-react'
 import * as faker from 'faker'
 import * as _ from 'lodash'
 import * as React from 'react'

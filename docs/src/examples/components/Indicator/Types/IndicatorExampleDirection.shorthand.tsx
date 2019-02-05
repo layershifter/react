@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Indicator } from '@stardust-ui/react'
+import { Indicator } from 'stardust-ui-test-react'
 
 const IndicatorExampleDirection = () => (
   <>

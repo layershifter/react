@@ -1,4 +1,4 @@
-import { Chat, Provider, Avatar } from '@stardust-ui/react'
+import { Chat, Provider, Avatar } from 'stardust-ui-test-react'
 import * as React from 'react'
 import ChatMessageWithPopover from './ChatMessageWithPopover'
 

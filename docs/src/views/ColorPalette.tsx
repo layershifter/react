@@ -1,4 +1,4 @@
-import { Provider, ProviderConsumer } from '@stardust-ui/react'
+import { Provider, ProviderConsumer } from 'stardust-ui-test-react'
 import * as faker from 'faker'
 import * as _ from 'lodash'
 import * as React from 'react'

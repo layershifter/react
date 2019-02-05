@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Menu, toolbarBehavior, toolbarButtonBehavior } from '@stardust-ui/react'
+import { Menu, toolbarBehavior, toolbarButtonBehavior } from 'stardust-ui-test-react'
 
 const items = [
   {

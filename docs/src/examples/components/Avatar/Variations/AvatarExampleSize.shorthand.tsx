@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Avatar, Grid, SizeValue } from '@stardust-ui/react'
+import { Avatar, Grid, SizeValue } from 'stardust-ui-test-react'
 
 const statusProps = {
   icon: 'check',

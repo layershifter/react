@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Provider } from '@stardust-ui/react'
+import { Provider } from 'stardust-ui-test-react'
 import { middleColumnStyles } from '../styles'
 
 export default props => {

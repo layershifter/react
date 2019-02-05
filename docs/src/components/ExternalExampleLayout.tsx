@@ -1,4 +1,4 @@
-import { Provider } from '@stardust-ui/react'
+import { Provider } from 'stardust-ui-test-react'
 import * as _ from 'lodash'
 import * as PropTypes from 'prop-types'
 import * as React from 'react'

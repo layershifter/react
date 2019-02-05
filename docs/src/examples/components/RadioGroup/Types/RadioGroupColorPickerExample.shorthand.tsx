@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Divider, RadioGroup } from '@stardust-ui/react'
+import { Divider, RadioGroup } from 'stardust-ui-test-react'
 
 class RadioGroupColorPickerExample extends React.Component {
   state = { selectedValue: '' }
