@@ -24,6 +24,7 @@
     "build": "gulp bundle --package react --umd"
   },
   "dependencies": {
+    "stardust-ui-test-react-proptypes": "^0.19.3",
     "classnames": "^2.2.5",
     "downshift": "^3.2.0",
     "fela": "^10.1.3",
