@@ -1,5 +1,5 @@
 {
-  "name": "@stardust-ui/react-proptypes",
+  "name": "stardust-ui-test-react-proptypes",
   "version": "0.19.2",
   "description": "Reusable PropTypes for React components.",
   "license": "MIT",

@@ -1,5 +1,5 @@
 {
-  "name": "@stardust-ui/react",
+  "name": "stardust-ui-test-react",
   "version": "0.19.2",
   "description": "A themable React component library.",
   "license": "MIT",
