@@ -88,7 +88,7 @@ task('test:projects:cra-ts', async () => {
   //////// ADD STARDUST AS A DEPENDENCY ///////
   logger('STEP 2. Add Stardust dependency to test project..')
 
-  await runInTestApp(`yarn add ${packageFilenames}`)
+  await runInTestApp(`yarn add ${packageFilenames.join(' ')}`)
   logger(`✔️Stardust UI packages were added to dependencies`)
 
   //////// REFERENCE STARDUST COMPONENTS IN TEST APP's MAIN FILE ///////
