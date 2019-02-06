@@ -7,7 +7,7 @@
     "paths": {
       "stardust-ui-test-react": ["packages/react/src"],
       "stardust-ui-test-react-proptypes": ["packages/react-proptypes/src"],
-      "*": ["*", "types/*"]
+      "*": ["packages/react/*", "*", "types/*"]
     },
     "types": ["node", "jest"],
     "typeRoots": ["../types", "../node_modules/@types"],
